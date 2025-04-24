@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="../styles/registration.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="../index.html" class="header__logo"><img src="../assets/images/Registration/logo.png" alt="Логотип CubeCarnival" class="header__logo-img"></a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a href="../index.html#event-desc" class="header__link">Об ивенте</a></li>
+                    <li class="header__item"><a href="../index.html#event-awards" class="header__link">Призы</a></li>
+                    <li class="header__item"><a href="../index.html#event-schedule" class="header__link">Расписание</a></li>
+                    <li class="header__item"><a href="../index.html#event-faq" class="header__link">Вопрос-ответ</a></li>
+                    <li class="header__item"><a href="./registration.html" class="header__link">Регистрация</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="event-welcome">
+            <div class="container">
+                <h2 class="event-welcome__title">Новогодний Minecraft Фейстиваль!</h2>
+                <p class="event-welcome__text">Присоединяйтесь к эпическому празднованию Нового года в Minecraft! Вас жду увлекательные игры,<br>Праздничные декорации и, конечно же, море веселья!</p>
+                <a href="#event-registration" class="btn btn--event-welcome">Регистрация</a>
+            </div>
+        </section>
+
+        <section class="event-rules" id="event-rules">
+            <div class="container">
+                <h2 class="event-rules__title">Правила участия</h2>
+                <div class="event-rules__list">
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">1</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Уважайте других игроков</span>
+                                <p class="event-rules__item-text">Ведите себя дружелюбно и уважительно по отношению к другим участникам.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">2</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Следуйте правилам сервера</span>
+                                <p class="event-rules__item-text">Ознакомьтесь с правилами сервера и соблюдайте их во время мероприятия.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">3</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Наслаждайтесь праздником</span>
+                            <p class="event-rules__item-text">Проведите незабываемый новогодний вечер в компании единомышленников.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-rules__decorations">
+                <img src="../assets/images/Registration/Christmas trees.png" alt="Новогодние елки" class="event-rules__decoration">
+                <img src="../assets/images/Registration/Christmas trees.png" alt="Новогодние елки" class="event-rules__decoration event-rules__decoration--second">
+            </div>
+        </section>
+        
+            <section class="event-registration" id="event-registration">
+                <div class="container">
+                    <h2 class="event-registration__title">Регистрация</h2>
+                    <img src="../assets/images/Registration/logo-registration.png" alt="Логотип регистрации" class="event-registration__logo">
+                    <form class="event-registration__form" id="registrationForm">
+                        <div class="event-registration__field">
+                            <p class="event-registration__field-text">Имя игрока</p>
+                            <input type="text" class="event-registration__input" name="name" required>
+                        </div>
+                        <div class="event-registration__field">
+                            <p class="event-registration__field-text">Игровой никнейм</p>
+                            <input type="text" class="event-registration__input" name="nicname" required>
+                        </div>
+                        <div class="event-registration__field">
+                            <p class="event-registration__field-text">E-mail</p>
+                            <input type="email" class="event-registration__input" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn--event-registration">Отправить</button>
+                    </form>
+                </div>
+                <div class="event-registration__decorations">
+                    <img src="../assets/images/Registration/Christmas trees.png" alt="Новогодние елки" class="event-registration__decoration">
+                    <img src="../assets/images/Registration/Christmas trees.png" alt="Новогодние елки" class="event-registration__decoration event-rules__decoration--second">
+                </div>
+        </section>
+
+        <section class="event-communication" id="event-communication">
+            <div class="container">
+                <h2 class="event-communication__title">Напиши свой вопрос в форму или на support@CubeCarnival-promo.ru</h2>
+                <form class="event-communication__form" id="contactForm">
+                    <div class="event-communication__field">
+                        <p class="event-communication__field-text">Имя</p>
+                        <input type="text" class="event-communication__input" name="name" required>
+                    </div>
+                    <div class="event-communication__field">
+                        <p class="event-communication__field-text">E-mail</p>
+                        <input type="email" class="event-communication__input" name="email" required>
+                    </div>
+                    <div class="event-communication__field event-communication__field--message">
+                        <p class="event-communication__field-text event-communication__field-text--message">Сообщение</p>
+                        <textarea class="event-communication__input event-communication__input--message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--event-communication">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="event-gallery">
+            <div class="container">
+                <h2 class="event-gallery__title">Галерея прошлого ивента</h2>
+                <div class="event-gallery__photos">
+                    <img src="../assets/images/icon/arrow-l-red.svg" alt="Предыдущее фото" class="event-gallery__arrow event-gallery__arrow--prev">
+                    <img src="../assets/images/Registration/gallery-images-1.png" alt="" class="event-gallery__photo">
+                    <img src="../assets/images/icon/arrow-r-red.svg" alt="Следующее фото" class="event-gallery__arrow event-gallery__arrow--next">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+            <!-- <img src="../assets/images/Registration/cake.png" alt="торт" class="footer__decoration"> -->
+        <div class="container">
+            <div class="footer__info">
+                <img src="../assets/images/Registration/logo.png" alt="Логотип" class="footer__logo">
+                <p class="footer__description">Российские организаторы<br>игровых мероприятий</p>
+            </div>
+    
+            <div class="footer__socials">
+                <h3 class="footer__socials-title">Следите за нами</h3>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://vk.com/">
+                            <img src="../assets/images/icon/vk.svg" alt="vk" class="footer__socials-icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://web.telegram.org/">
+                            <img src="../assets/images/icon/telegram.svg" alt="telegram" class="footer__socials-icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://www.youtube.com/">
+                            <img src="../assets/images/icon/youtube.svg" alt="youtube" class="footer__socials-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <nav class="footer__nav">
+                <ul class="footer__nav-list footer__nav-list--first">
+                    <li class="footer__nav-title"><span>Навигация</span></li>
+                    <li class="footer__nav-item"><a href="../index.html" class="footer__nav-link">Главная</a></li>
+                    <li class="footer__nav-item"><a href="../index.html#event-modes" class="footer__nav-link">Режимы</a></li>
+                    <li class="footer__nav-item"><a href="../index.html#event-awards" class="footer__nav-link">Призы</a></li>
+                    <li class="footer__nav-item"><a href="#!" class="footer__nav-link">Контакты</a></li>
+                    <li class="footer__nav-item"><a href="../index.html#event-schedule" class="footer__nav-link">Расписание</a></li>
+                </ul>
+                <ul class="footer__nav-list footer__nav-list--second">
+                    <li class="footer__nav-title"><span>Поддержка</span></li>
+                    <li class="footer__nav-item"><a href="../index.html#event-faq" class="footer__nav-link">FAQ</a></li>
+                    <li class="footer__nav-item"><a href="#event-rules" class="footer__nav-link">Правила участия</a></li>
+                    <li class="footer__nav-item"><a href="#!" class="footer__nav-link">Политика конфиденциальности</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer__line"></div>
+            <p class="footer__copyright">Новогодний Ивент Minecraft 2024. Все права защищены</p>
+        </div>
+    </footer>
+    
+    <script src="../scripts/script.js"></script>
+</body>
+</html>

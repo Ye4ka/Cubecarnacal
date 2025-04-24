@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="./index.html" class="header__logo"><img src="./assets/images/Home/logo.png" alt="Логотип CubeCarnival" class="header__logo-img"></a>
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li class="header__item"><a href="#event-desc" class="header__link">Об ивенте</a></li>
+                    <li class="header__item"><a href="#event-awards" class="header__link">Призы</a></li>
+                    <li class="header__item"><a href="#event-schedule" class="header__link">Расписание</a></li>
+                    <li class="header__item"><a href="#event-faq" class="header__link">Вопрос-ответ</a></li>
+                    <li class="header__item"><a href="./pages/registration.html" class="header__link">Регистрация</a></li>
+                </ul>
+            </nav>
+            <button class="header__burger">
+                <span class="header__burger-line"></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="event-welcome">
+            <div class="container">
+                <h1 class="event-welcome__title">Новогоднее событие в Minecraft: Праздник в блочном мире</h1>
+                <span class="event-welcome__subtitle">Празднуй Новый год в мире кубиков!</span>
+                <p class="event-welcome__text">Приготовьтесь к незабываемому Новому году в Minecraft! Вас ждет множество праздничных событий, специальных миссий ,новых режимов игры и, конечно же, эксклюзивных наград.</p>
+                <button class="btn btn--event-welcome"><a href="./pages/registration.html">Участвовать</a></button>
+            </div>
+        </section>
+        
+        <section class="event-desc" id="event-desc">
+            <div class="container">
+                    <h2 class="event-desc__title">Подробности события</h2>
+                    <p class="event-desc__text">В этом году мы подготовили для вас грандиозное новогоднее событие, полное веселья и приключений. Вас ждут новые праздничные миссии, уникальные предметы, ограниченные по времени, и возможность украсить свой мир Minecraft в новогодней тематике.</p>
+                <div class="event-desc__timeline">
+                    <div class="event-desc__timeline-content">
+                        <img src="./assets/images/Home/present.png" alt="Новогодний подарок" class="event-desc__present">
+                        <div class="event-desc__square event-desc__square--start">
+                            <span class="event-desc__number">1</span>
+                            <div class="event-desc__line"></div>
+                        </div>
+                        <img src="./assets/images/Home/present.png" alt="Новогодний подарок" class="event-desc__present">
+                        <div class="event-desc__square event-desc__square--end">
+                            <span class="event-desc__number">2</span>
+                            <div class="event-desc__line"></div>
+                        </div>
+                        <img src="./assets/images/Home/present.png" alt="Новогодний подарок" class="event-desc__present">
+                    </div>
+                </div>
+                <div class="event-desc__dates">
+                    <p class="event-desc__date event-desc__date--start">Дата начала<br>30 декабря</p>
+                    <p class="event-desc__date event-desc__date--end">Дата окончания<br>15 января</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-missions">
+            <div class="container">
+                <h2 class="event-missions__title">Специальные задания и миссии</h2>
+                <p class="event-missions__desc">В течение всего события у вас будет возможность выполнить ряд праздничных заданий и миссий. За их успешное выполнение вы получите уникальные награды, такие как праздничные скины, новые рецепты крафта и редкие предметы.</p>
+                <div class="event-missions__list">
+                    <div class="event-missions__item">
+                        <div class="event-missions__square">
+                            <span class="event-missions__number">1</span>
+                        </div>
+                        <div class="event-missions__content">
+                            <span class="event-missions__item-title">Сборка снежного человека</span>
+                            <p class="event-missions__item-text">Соберите снежного человека из снежных блоков и украсьте его.</p>
+                        </div>
+                    </div>
+                    <div class="event-missions__item">
+                        <div class="event-missions__square">
+                            <span class="event-missions__number">2</span>
+                        </div>
+                        <div class="event-missions__content">
+                            <span class="event-missions__item-title">Поиск подарков</span>
+                            <p class="event-missions__item-text">Отправляйтесь на поиски спрятанных подарков по всему миру Minecraft.</p>
+                        </div>
+                    </div>
+                    <div class="event-missions__item">
+                        <div class="event-missions__square">
+                            <span class="event-missions__number">3</span>
+                        </div>
+                        <div class="event-missions__content">
+                            <span class="event-missions__item-title">Создание праздничного украшения</span>
+                            <p class="event-missions__item-text">Скрафтите уникальное украшение для своего дома в Minecraft, используя праздничные блоки.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/Home/present-r.png" alt="Декоративное изображение" class="event-missions__decoration">
+        </section>
+
+        <section class="event-modes" id="event-modes">
+            <div class="container">
+                <h2 class="event-modes__title">Новые игровые режимы</h2>
+                <p class="event-modes__desc">В этом году вас ждет новый праздничный режим игры - "Битва снежных людей". Вы будете сражаться против враждебных снежных големов, используя праздничные боевые предметы.</p>
+                <div class="event-modes__list">
+                    <div class="event-modes__item">
+                        <img src="./assets/images/icon/snowflake.svg" alt="Иконка снежинки" class="event-modes__icon">
+                        <div class="event-modes__content">
+                            <span class="event-modes__item-title">Снежная битва</span>
+                            <p class="event-modes__item-text">В этом режиме вы будете сражаться против других игроков, используя снежки.</p>
+                        </div>
+                    </div>
+                    <div class="event-modes__item">
+                        <img src="./assets/images/icon/gift.svg" alt="Иконка подарка" class="event-modes__icon">
+                        <div class="event-modes__content">
+                            <span class="event-modes__item-title">Поиск подарков</span>
+                            <p class="event-modes__item-text">Найдите спрятанные подарки по всему миру Minecraft, чтобы получить редкие награды.</p>
+                        </div>
+                    </div>
+                    <div class="event-modes__item">
+                        <img src="./assets/images/icon/hammer.svg" alt="Иконка молота" class="event-modes__icon">
+                        <div class="event-modes__content">
+                            <span class="event-modes__item-title">Творческий режим с новогодней тематикой</span>
+                            <p class="event-modes__item-text">Проявите свою фантазию и постройте невероятные творения с использованием новогодних элементов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-modes__decorations">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-modes__decoration">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-modes__decoration event-modes__decoration--second">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-modes__decoration event-modes__decoration--three">
+            </div>
+        </section>
+
+        <section class="event-awards" id="event-awards">
+            <div class="container">
+                <h2 class="event-awards__title">Эксклюзивные награды и призы</h2>
+                <p class="event-awards__desc">За выполнение праздничных заданий и миссий вы будете получать уникальные награды, которые доступны только в течение новогоднего события.</p>
+                <div class="event-awards__list">
+                    <div class="event-awards__item">
+                        <img src="./assets/images/icon/trophy.svg" alt="Трофей" class="event-awards__icon">
+                        <div class="event-awards__content">
+                            <span class="event-awards__item-title">Лучший строитель</span>
+                            <p class="event-awards__item-text">Награда за создание самой впечатляющей снежной фигуры.</p>
+                        </div>
+                    </div>
+                    <div class="event-awards__item">
+                        <img src="./assets/images/icon/gift.svg" alt="Подарок" class="event-awards__icon">
+                        <div class="event-awards__content">
+                            <span class="event-awards__item-title">Счастливый победитель</span>
+                            <p class="event-awards__item-text">Случайный победитель, выбранный из всех участников, получит ценный приз.</p>
+                        </div>
+                    </div>
+                    <div class="event-awards__item">
+                        <img src="./assets/images/icon/star.svg" alt="Звезда" class="event-awards__icon">
+                        <div class="event-awards__content">
+                            <span class="event-awards__item-title">Самый активный игрок</span>
+                            <p class="event-awards__item-text">Награда за активное участие во всех событиях фестиваля.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container--full">
+                <div class="event-awards__cards">
+                    <div class="event-awards__card event-awards__card-hover">
+                        <div class="event-awards__card-content">
+                            <h3 class="event-awards__card-title">Праздничные скины</h3>
+                            <p class="event-awards__card-text">Получите эксклюзивные праздничные скины для своего персонажа Minecraft.</p>
+                        </div>
+                        <img src="./assets/images/Home/skin.png" alt="Скин персонажа" class="event-awards__card-image event-awards__card-image--first">
+                    </div>
+                    <div class="event-awards__card event-awards__card-hover">
+                        <div class="event-awards__card-content">
+                            <h3 class="event-awards__card-title">Новые рецепты крафта</h3>
+                            <p class="event-awards__card-text">Узнайте новые рецепты крафта праздничных предметов, таких как праздничные блоки и декорации.</p>
+                        </div>
+                        <img src="./assets/images/Home/green-present.png" alt="Зеленый подарок" class="event-awards__card-image event-awards__card-image--second">
+                    </div>
+                    <div class="event-awards__card event-awards__card-hover event-awards__card--three">
+                        <div class="event-awards__card-content">
+                            <h3 class="event-awards__card-title">Редкие предметы</h3>
+                            <p class="event-awards__card-text">Найдите редкие праздничные предметы, которые помогут вам украсить свой мир Minecraft.</p>
+                        </div>
+                        <img src="./assets/images/Home/snowman.png" alt="Новогодний декор" class="event-awards__card-image event-awards__card-image--three">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-registration">
+            <div class="container">
+                <h2 class="event-registration__title">Как зарегистрироваться?</h2>
+                <div class="event-registration__steps">
+                    <img src="./assets/images/icon/arrow-l.svg" alt="Предыдущий шаг" class="event-registration__arrow event-registration__arrow--prev">
+                    <div class="event-registration__step">
+                        <h3 class="event-registration__step-title">Шаг 1</h3>
+                        <p class="event-registration__step-text">Перейдите на сайт мероприятия и нажмите кнопку "Регистрация".</p>
+                    </div>
+                    <img src="./assets/images/icon/arrow-r.svg" alt="Следующий шаг" class="event-registration__arrow event-registration__arrow--next">
+                </div>
+                <div class="event-registration__pagination">
+                    <div class="event-registration__dot event-registration__dot--active"></div>
+                    <div class="event-registration__dot"></div>
+                    <div class="event-registration__dot"></div>
+                </div>
+            </div>
+            <div class="event-registration__decorations">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-registration__decoration">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-registration__decoration event-registration__decoration--second">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Декоративные елки" class="event-registration__decoration event-registration__decoration--three">
+            </div>
+        </section>
+
+        <section class="event-schedule" id="event-schedule">
+            <div class="container">
+                <h2 class="event-schedule__title">Расписание</h2>
+                <p class="event-schedule__desc">В течение новогоднего события будет проходить ряд праздничных мероприятий, таких как турниры, конкурсы и праздничные концерты. Следите за расписанием, чтобы не пропустить ни одного из них.</p>
+                <div class="event-schedule__list">
+                    <div class="event-schedule__item">
+                        <div class="event-schedule__square">
+                            <span class="event-schedule__number">1</span>
+                        </div>
+                        <div class="event-schedule__content">
+                            <span class="event-schedule__item-title">30 декабря</span>
+                            <p class="event-schedule__item-text">Открытие новогоднего события. Начало праздничных заданий и миссий.</p>
+                        </div>
+                    </div>
+                    <div class="event-schedule__item">
+                        <div class="event-schedule__square">
+                            <span class="event-schedule__number">2</span>
+                        </div>
+                        <div class="event-schedule__content">
+                            <span class="event-schedule__item-title">1 января</span>
+                            <p class="event-schedule__item-text">Турнир "Битва снежных людей".</p>
+                        </div>
+                    </div>
+                    <div class="event-schedule__item">
+                        <div class="event-schedule__square">
+                            <span class="event-schedule__number">3</span>
+                        </div>
+                        <div class="event-schedule__content">
+                            <span class="event-schedule__item-title">7 января</span>
+                            <p class="event-schedule__item-text">Конкурс "Лучший новогодний дом в Minecraft".</p>
+                        </div>
+                    </div>
+                    <div class="event-schedule__item">
+                        <div class="event-schedule__square">
+                            <span class="event-schedule__number">4</span>
+                        </div>
+                        <div class="event-schedule__content">
+                            <span class="event-schedule__item-title">15 января</span>
+                            <p class="event-schedule__item-text">Закрытие новогоднего события.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/images/Home/cookie-present.png" alt="" class="event-schedule__decoration">
+        </section>
+
+        <section class="event-rules" id="event-rules">
+            <div class="container">
+                <h2 class="event-rules__title">Правила участия</h2>
+                <div class="event-rules__list">
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">1</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Уважайте других игроков</span>
+                                <p class="event-rules__item-text">Ведите себя дружелюбно и уважительно по отношению к другим участникам.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">2</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Следуйте правилам сервера</span>
+                                <p class="event-rules__item-text">Ознакомьтесь с правилами сервера и соблюдайте их во время мероприятия.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                    <div class="event-rules__item">
+                        <div class="event-rules__square">
+                            <span class="event-rules__number">3</span>
+                        </div>
+                        <div class="event-rules__content">
+                            <div class="event-rules__text-wrapper">
+                                <span class="event-rules__item-title">Наслаждайтесь праздником</span>
+                            <p class="event-rules__item-text">Проведите незабываемый новогодний вечер в компании единомышленников.</p>
+                            </div>
+                            <div class="event-rules__line"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="event-joining">
+            <div class="container">
+                <h2 class="event-joining__title">Как присоединиться к событию?</h2>
+                <div class="event-joining__steps">
+                    <div class="event-joining__step">
+                        <div class="event-joining__square">
+                            <span class="event-joining__number">1</span>
+                        </div>
+                        <div class="event-joining__content">
+                            <span class="event-joining__step-title">Зарегистрируйтесь</span>
+                        </div>
+                    </div>
+                    <div class="event-joining__step">
+                        <div class="event-joining__square">
+                            <span class="event-joining__number">2</span>
+                        </div>
+                        <div class="event-joining__content">
+                            <span class="event-joining__step-title">Скачайте Minecraft</span>
+                            <p class="event-joining__step-text">Убедитесь, что у вас установлена последняя версия Minecraft.</p>
+                        </div>
+                    </div>
+                    <div class="event-joining__step">
+                        <div class="event-joining__square">
+                            <span class="event-joining__number">3</span>
+                        </div>
+                        <div class="event-joining__content">
+                            <span class="event-joining__step-title">Подключитесь к серверу</span>
+                            <p class="event-joining__step-text">Введите IP-адрес сервера в игре.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="event-joining__decorations">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Новогодние елки" class="event-joining__decoration">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Новогодние елки" class="event-joining__decoration event-joining__decoration--second">
+                <img src="./assets/images/Home/Christmas trees.png" alt="Новогодние елки" class="event-joining__decoration event-joining__decoration--three">
+            </div>
+        </section>
+
+        <section class="event-faq" id="event-faq">
+            <div class="container">
+                <h2 class="event-faq__title">Часто задаваемые вопросы</h2>
+                <div class="event-faq__list">
+                    <div class="event-faq__item">
+                        <p class="event-faq__item-title">Где проходит ивент?</p>
+                        <button class="event-faq__toggle-btn">
+                            <img src="./assets/images/icon/icon-plus.svg" alt="" class="event-faq__toggle-icon">
+                        </button>
+                    </div>
+                    <div class="event-faq__item">
+                        <p class="event-faq__item-title">Как получить призы?</p>
+                        <button class="event-faq__toggle-btn">
+                            <img src="./assets/images/icon/icon-plus.svg" alt="" class="event-faq__toggle-icon">
+                        </button>
+                    </div>
+                    <div class="event-faq__item">
+                        <p class="event-faq__item-title">Что нужно сделать,<br>чтобы зарегистрироваться?</p>
+                        <button class="event-faq__toggle-btn">
+                            <img src="./assets/images/icon/icon-plus.svg" alt="" class="event-faq__toggle-icon">
+                        </button>
+                    </div>
+                    <div class="event-faq__item">
+                        <p class="event-faq__item-title">Как долго продлится событие?</p>
+                        <button class="event-faq__toggle-btn">
+                            <img src="./assets/images/icon/icon-plus.svg" alt="" class="event-faq__toggle-icon">
+                        </button>
+                    </div>
+                    <div class="event-faq__item">
+                        <p class="event-faq__item-title">Что такое "Битва снежных людей"?</p>
+                        <button class="event-faq__toggle-btn">
+                            <img src="./assets/images/icon/icon-plus.svg" alt="" class="event-faq__toggle-icon">
+                        </button>
+                    </div>
+                </div>
+                <div class="event-faq__pagination">
+                    <img src="./assets/images/icon/arrow-l-red.svg" alt="" class="event-faq__arrow event-faq__arrow--prev">
+                    <p class="event-faq__page-number event-faq__page-number--active">1</p>
+                    <p class="event-faq__page-number">2</p>
+                    <p class="event-faq__page-number">3</p>
+                    <p class="event-faq__page-number">4</p>
+                    <img src="./assets/images/icon/arrow-r-red.svg" alt="" class="event-faq__arrow event-faq__arrow--next">
+                </div>
+            </div>
+        </section>
+
+        <section class="event-communication">
+            <div class="container">
+                <h2 class="event-communication__title">Напиши свой вопрос в форму или на support@CubeCarnival-promo.ru</h2>
+                <form class="event-communication__form" id="contactForm">
+                    <div class="event-communication__field">
+                        <p class="event-communication__field-text">Имя</p>
+                        <input type="text" class="event-communication__input" name="name" required>
+                    </div>
+                    <div class="event-communication__field">
+                        <p class="event-communication__field-text">E-mail</p>
+                        <input type="email" class="event-communication__input" name="email" required>
+                    </div>
+                    <div class="event-communication__field event-communication__field--message">
+                        <p class="event-communication__field-text event-communication__field-text--message">Сообщение</p>
+                        <textarea class="event-communication__input event-communication__input--message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn--event-communication">Отправить</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="event-gallery">
+            <div class="container">
+                <h2 class="event-gallery__title">Галерея прошлого ивента</h2>
+                <div class="event-gallery__photos">
+                    <img src="./assets/images/icon/arrow-l-red.svg" alt="Предыдущее фото" class="event-gallery__arrow event-gallery__arrow--prev">
+                    <img src="./assets/images/Home/gallery-images-1.png" alt="" class="event-gallery__photo">
+                    <img src="./assets/images/icon/arrow-r-red.svg" alt="Следующее фото" class="event-gallery__arrow event-gallery__arrow--next">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__info">
+                <a href="./index.html" class="footer__logo"><img src="./assets/images/Home/logo.png" alt="Логотип CubeCarnival" class="footer__logo"></a>
+                <p class="footer__description">Российские организаторы<br>игровых мероприятий</p>
+            </div>
+    
+            <div class="footer__socials">
+                <h3 class="footer__socials-title">Следите за нами</h3>
+                <ul class="footer__socials-list">
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://vk.com/">
+                            <img src="./assets/images/icon/vk.svg" alt="vk" class="footer__socials-icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://web.telegram.org/">
+                            <img src="./assets/images/icon/telegram.svg" alt="telegram" class="footer__socials-icon">
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="https://www.youtube.com/">
+                            <img src="./assets/images/icon/youtube.svg" alt="youtube" class="footer__socials-icon">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    
+            <nav class="footer__nav">
+                <ul class="footer__nav-list footer__nav-list--first">
+                    <li class="footer__nav-title"><span>Навигация</span></li>
+                    <li class="footer__nav-item"><a href="../index.html" class="footer__nav-link">Главная</a></li>
+                    <li class="footer__nav-item"><a href="#event-modes" class="footer__nav-link">Режимы</a></li>
+                    <li class="footer__nav-item"><a href="#event-awards" class="footer__nav-link">Призы</a></li>
+                    <li class="footer__nav-item"><a href="#!" class="footer__nav-link">Контакты</a></li>
+                    <li class="footer__nav-item"><a href="#event-schedule" class="footer__nav-link">Расписание</a></li>
+                </ul>
+                <ul class="footer__nav-list footer__nav-list--second">
+                    <li class="footer__nav-title"><span>Поддержка</span></li>
+                    <li class="footer__nav-item"><a href="#event-faq" class="footer__nav-link">FAQ</a></li>
+                    <li class="footer__nav-item"><a href="#event-rules" class="footer__nav-link">Правила участия</a></li>
+                    <li class="footer__nav-item"><a href="#!" class="footer__nav-link">Политика конфиденциальности</a></li>
+                </ul>
+            </nav>
+    
+            <div class="footer__line"></div>
+            <p class="footer__copyright">Новогодний Ивент Minecraft 2024. Все права защищены</p>
+        </div>
+    </footer>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
